@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Collatz hailstone numbers sequence</title>
+
+	<link rel="stylesheet" href="style.css" ></link>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+</head>
+
+<body>
+	<div class="coded text-left">
+		<!-- Coded --> <br><!-- whithout AI --> <p class="m-0 p-0"> JUST </p> <p class="m-0 p-0"> FOR </p> <p class="m-0 p-0"> FUN </p> 
+	</div>
+
+
+	<div class="eye">
+	  <svg width="100%" height="100%" viewBox="0 0 102 102" fill="none">
+	    <defs>
+	    <radialGradient id="iris">
+	      <stop offset="10%" stop-color="#bee1ff" />
+	      <stop offset="95%" stop-color="#b7b7b7" />
+	    </radialGradient>
+	  </defs>
+	    <mask id="mask">
+	      <ellipse cx="50" cy="50" rx="100" ry="50" fill="#fff">
+	        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+	      </ellipse>
+	    </mask>
+	    <g mask="url(#mask)">
+	      <ellipse cx="50" cy="50" rx="100" ry="50" stroke="#595959" stroke-width="3px" fill="white">
+	        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+	      </ellipse>
+	      <g id="eyeball">
+	        <circle r="40" cx="52" cy="52"  fill="url(#iris)" />
+	        <circle id="pupill" r="15" cx="52" cy="52" fill="#595959" />
+	      </g>
+	    </g>
+	  </svg>  
+	</div>
+
+
+	<div class="allBox">
+	 <div class="container360 startScreen position-relative" id="startScreen">
+	 	<div class="bigText">
+			THE<br> <span style="color: #ffff;">COLLATZ</span> <br>SEQUENCE
+		</div>
+
+	    <div class="card360">
+	      <div class="bike">
+	        <div class="circle"><h4>2</h4></div>
+	        <div class="circle2"><h4>4</h4></div>
+	        <div class="circle3"><h4>1</h4></div>
+	        <img src="img/ff.png" alt="image" style=" -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(100%);" >
+	        <h1 class="titleV">THE <span style="color: #ffff;">COLLATZ</span> <br>SEQUENCE</h1><br>
+
+	        <div class="borderBoxX"></div>
+
+	        <div class="eye2">
+			  <svg width="100%" height="100%" viewBox="0 0 102 102" fill="none">
+			    <defs>
+			    <radialGradient id="iris2">
+			      <stop offset="10%" stop-color="#bee1ff" />
+			      <stop offset="95%" stop-color="#b7b7b7" />
+			    </radialGradient>
+			  </defs>
+			    <mask id="mask2">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" fill="#fff">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			    </mask>
+			    <g mask="url(#mask2)">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" stroke="#595959" stroke-width="3px" fill="white">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			      <g id="eyeball2">
+			        <circle r="40" cx="52" cy="52"  fill="url(#iris2)" />
+			        <circle id="pupill2" r="15" cx="52" cy="52" fill="#595959" />
+			      </g>
+			    </g>
+			  </svg>  
+			</div>
+	      </div>
+	      <div class="info">
+	        <div class="purchase">
+	          <button id="startBtn">S T A R T</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	 <div class="container360 startScreen position-relative" id="startScreen">
+	 	<div class="bigText">
+			THE<br> <span style="color: #ffff;">Discrete Fourier</span> <br>transform
+		</div>
+
+	    <div class="card360">
+	      <div class="bike">
+	        <div class="top290"> <img src="img/ft.png"></img></div>
+	      <!--   <div class="circle2"><h4>4</h4></div>
+	        <div class="circle3"><h4>1</h4></div> -->
+	        <img class="foImg" src="img/fo.png" alt="image" style=" -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	  filter: grayscale(100%);" >
+	        <h1 class="titleV">THE <span style="color: #ffff;">DISCRETE FOURIER</span> <br>TRANSFORM</h1><br>
+
+	        <div class="borderBoxX"></div>
+
+	        <div class="eye2">
+			  <svg width="100%" height="100%" viewBox="0 0 102 102" fill="none">
+			    <defs>
+			    <radialGradient id="iris2">
+			      <stop offset="10%" stop-color="#bee1ff" />
+			      <stop offset="95%" stop-color="#b7b7b7" />
+			    </radialGradient>
+			  </defs>
+			    <mask id="mask2">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" fill="#fff">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			    </mask>
+			    <g mask="url(#mask2)">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" stroke="#595959" stroke-width="3px" fill="white">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			      <g >
+			        <circle r="40" cx="52" cy="52"  fill="url(#iris2)" />
+			        <circle id="pupill2" r="15" cx="52" cy="52" fill="#595959" />
+			      </g>
+			    </g>
+			  </svg>  
+			</div>
+	      </div>
+	      <div class="info">
+	        <div class="purchase">
+	          <button >S T A R T</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	   <div class="container360 startScreen position-relative" id="startScreen">
+	 	<div class="bigText">
+			THE<br> <span style="color: #ffff;">RIEMANN</span> <br>HTPOTHESIS
+		</div>
+
+	    <div class="card360">
+	      <div class="bike">
+	 		 <!--<div class="top290"> <img src="img/ft.png"></img></div> -->
+	   		<img src="img/Riemann.jpg" alt="image" style=" -webkit-filter: grayscale(100%)"/>
+
+	        <img src="img/rh.png" alt="image" style=" -webkit-filter: grayscale(100%); />
+	  filter: grayscale(100%);" ></img>
+	        <h1 class="titleV">THE<span style="color: #ffff;"><br>RIEMANN</span> <br>HTPOTHESIS</h1><br>
+
+	        <div class="borderBoxX"></div>
+
+	        <div class="eye2">
+			  <svg width="100%" height="100%" viewBox="0 0 102 102" fill="none">
+			    <defs>
+			    <radialGradient id="iris2">
+			      <stop offset="10%" stop-color="#bee1ff" />
+			      <stop offset="95%" stop-color="#b7b7b7" />
+			    </radialGradient>
+			  </defs>
+			    <mask id="mask2">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" fill="#fff">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			    </mask>
+			    <g mask="url(#mask2)">
+			      <ellipse cx="50" cy="50" rx="100" ry="50" stroke="#595959" stroke-width="3px" fill="white">
+			        <animate attributeName="ry" values="50;50;50;50;0;50;50;50;50" dur="5s" repeatCount="indefinite" />
+			      </ellipse>
+			      <g >
+			        <circle r="40" cx="52" cy="52"  fill="url(#iris2)" />
+			        <circle id="pupill2" r="15" cx="52" cy="52" fill="#595959" />
+			      </g>
+			    </g>
+			  </svg>  
+			</div>
+	      </div>
+	      <div class="info">
+	        <div class="purchase">
+	          <button >S T A R T</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	</div> <!-- END Allbox -->
+
+
+	<div id="main-container"></div>
+
+	<!-- Load scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="collatz.js"></script>
+
+
+</body>
+</html>
+
+<!-- <div class='d-flex justify-content-between'>
+	<div class='circleIMG'></div>
+	<h1 class='mx-4'>Secuencia de collatz</h1>
+</div> 
+<h3 class='m-4'>Selecciona un número</h3> -->
