@@ -1,0 +1,411 @@
+		.allBox{
+    position: relative;
+    height: 100%;
+}
+		.coded{
+			position: fixed;
+			float:right;
+			right: 40px;
+			font-size:32px;
+			top: 30px;
+			font-weight: 100;
+			z-index: 99999999999
+		}
+		.bigText{
+			position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 357px;
+    color: white;
+    z-index: 5;
+    line-height: 300px;
+    font-weight: 900;
+    opacity: 0.5;
+		}
+		.borderBoxX{
+position: absolute;
+    width: 346px;
+    height: 389px;
+    border: 2px solid white;
+    z-index: 3000;
+    top: -51px;
+    right: 409px;
+		}
+		body {
+			background: linear-gradient(to bottom, rgba(255, 235, 66, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+			background-repeat: repeat;
+			background-image: url(../img/backpapper.png);
+			background-size: 46%;
+
+			/*  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  margin: 0;
+			  height: 100vh;*/
+			  height: 100vh;
+			}
+			.eye {
+				position: absolute;
+				width: 100px;
+				height: 50px;
+				float: right;
+				right: 15px /*left: 50%; transform: translate3d(-50%, -50%, 0);*/;
+				z-index: 10000;
+				top: 31px;
+			}
+			.eye2 {
+position:absolute;			width: 100px;
+    height: 50px;
+    float: right;
+    right: 449px;
+    z-index: 2000000000;
+    top: 31px;
+			}
+			.numberArtBox>img{
+				position: relative;
+				top:3%;
+				border-color: #fff;
+    			border: 2px solid white;
+			}
+			.numberArtBox{
+    			box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23);
+			}
+			#eyeball {
+			  transition: transform 0.5s linear;
+			}
+			#eyeball2 {
+			  transition: transform 0.5s linear;
+			}
+#pupill {
+			  transition: transform 0.6s linear;
+			}
+			#pupill2 {
+			  transition: transform 0.6s linear;
+			}
+
+			#main-container{
+				position: relative;
+				z-index: 1
+			}
+
+
+			.axisTitle{
+			  font-family: sans-serif;
+			  font-weight: bold;
+			}
+
+			.dot{
+			  cursor: pointer;
+			}
+			#my_dataviz{
+				position: relative;
+				height: 450px
+			}
+			.chart{
+				position: relative;
+			  width: 100%;
+			  height: 100%;
+			}
+
+			.main{
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			  background: rgba(255, 255, 255, 0.3);
+			  border: solid 1px #eee;
+			  border-bottom: solid 1px #ccc;
+			  font-family: sans-serif;
+			  width: 70%;
+			  height: 70%;
+			}
+
+			.name{
+			  font-size: 0.7rem;
+			}
+
+			.ledgendText{font-size: 0.8rem;}
+
+			.subTitle{margin: 0;}
+			.title{margin: 15px 0 5px 0;}
+
+			.tooltip {	
+			  position: absolute;							
+			  padding: 8px;				
+			  font: 12px sans-serif;		
+
+			  color: black;
+			  border: 0px;		
+			  /*border-radius: 8px;	*/		
+			  pointer-events: none;
+			/*  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.4);*/
+			  text-align: center;
+			  width: 180px;
+			  z-index: 1000000
+			}
+
+			/*---- media queries ----*/
+			@media (max-width: 1100px){
+			  .main{width: 80%;}
+			}
+			@media (max-width: 800px){
+			  .main{width: 90%;}
+			}
+			@media (max-width: 700px){
+			  .title{font-size: 1.6rem;}
+			  .subTitle{font-size: 1rem;}
+			  .ledgendText{font-size: 0.7rem;}
+			  .main{width: 100%;}
+			}
+			@media (max-height: 900px){
+			  .main{height: 80%;}
+			}
+			@media (max-height: 650px){
+			  .main{height: 90%;}
+			}
+			@media (max-height: 600px){
+			  .name{
+			    font-size: 0.6rem;
+			    opacity: 1;
+			  }
+			  .main{height: 100%;}
+			}
+			@media (max-height: 450px){
+			  .name{opacity: 0;}
+			}
+
+			.w-special{
+				height: 70px
+			}
+			.collTXT{
+				font-size: 82px;
+				font-weight:bold;
+			}
+			.bigTXT{
+				font-size: 32px;
+				font-weight:100;
+				color: #909090
+			}
+.flowerImg{
+	width: 80%
+}
+
+		   #random_quote{
+		   		font-size: 12px
+		   }
+		   .quotesDiv{
+		   		z-index: 10000;
+		   }
+		   .twitter{
+			   	position: relative;
+			   	top: 4px
+		   }
+		   .custom-number {
+			  content: counter(step-counter);
+			  font-size: 32px;
+			  background-color: rgb(0,200,200);
+			  color: white;
+			  font-weight: bold;
+			  padding: 3px 8px;
+			  border-radius: 3px;
+			}
+			.circlesGray{
+				fill:gray;
+			}
+			.fillOne{
+				fill:#ffed07;
+			}
+			.fillTwo{
+				fill:#ff2dc3;
+			}
+			.fillThree{
+				fill:#ff7800
+			}
+			#my_dataviz > .chart > g:nth-child(1) > g.circlesBox:nth-child(2) > circle {
+				fill:purple;
+		}
+
+
+.container360 {
+	background-repeat: repeat;
+			background-image: url(../img/backpapper.png);
+			background-size: 46%;
+ position: absolute;
+				width: 100%;
+				height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.75s ease-out;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  z-index:990000000;
+
+}
+.card360 {
+  transition: all 0.75s;
+  max-width: 700px;
+  border-radius: 30px;
+  padding: 2vh 5%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  	background-repeat: repeat;
+			background-image: url(../img/backpapper.png);
+			background-size: 46%;
+			z-index: 10;
+}
+
+.bike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.bike img {
+    width: 350px;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    position: relative;
+    right: 33px;
+    top: -35px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #ef56bd;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    float: right;
+    right: -2px;
+    top: -57px;
+}
+
+.circle2 {
+width: 160px;
+    height: 160px;
+    background: #ff9e00;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+    float: right;
+    left: 203px;
+    top: 255px;
+}
+
+.circle3 {
+    width: 70px;
+    height: 70px;
+    background: #2da2f6;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    float: right;
+    right: -17px;
+    top: 400px;
+}
+.circle h4{
+	    position: relative;
+    left: 38px;
+    font-size: 38px;
+    top: 25px;
+    color: white;
+    font-weight: 400;
+}
+.circle2 h4{
+    position: relative;
+    left: 53px;
+    font-size: 76px;
+    top: 32px;
+    color: white;
+    font-weight: 400;
+}
+.circle3 h4{
+position: relative;
+    left: 28px;
+    font-size: 27px;
+    top: 17px;
+    color: white;
+    font-weight: 400;
+}
+.titleV{
+font-size: 62px !important;
+    line-height: 63px;
+    font-weight: 900;
+    z-index: 20;
+    color: #fff;
+    top: -45px;
+    position: relative;
+    right: 15px;
+}
+.info {
+	position: relative;
+	z-index: 1000;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.info h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #443763;
+  font-size: 45px !important;
+  font-weight: 900;
+  font-size: clamp(45px, 8vw, 75px);
+  transition: all 0.75s ease-out;
+  margin-bottom: 5vh;
+  transform-style: preserve-3d;
+  position: absolute;
+  bottom: 100px;
+  /*line-height: */
+}
+.info h3 {
+  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
+  margin-bottom: 7vh;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.purchase {
+  margin-bottom: 5vh;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.1em;
+    width: 100%;
+    max-width: 335px;
+    font-size: clamp(18px, 3vw, 25px);
+    padding: 0.8em 3em;
+    background: #ffffff;
+    border: none;
+    color: #484848;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    border: 1px solid gray;
+}
+.card.has-transform {
+  transition: all 100ms linear;
+}
+.title.has-transform {
+  transform: translateZ(150px) !important;
+}
+.bike img.has-transform {
+  transform: translateZ(200px) rotateZ(10deg) !important;
+}
+.info h3.has-transform {
+  transform: translateZ(125px) !important;
+}
+.purchase.has-transform {
+  transform: translateZ(150px) rotateX(20deg) !important;
+}
